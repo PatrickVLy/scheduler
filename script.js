@@ -59,12 +59,15 @@ var input7PM= document.getElementById("19").value;
 var input8PM= document.getElementById("20").value;
 var input9PM= document.getElementById("21").value;
 
+
+
 var hours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
 var hoursInput = [nineAMInput, tenAMInput, elevenAMInput, twelvePMInput, onePMInput, twoPMInput, threePMInput, fourPMInput, fivePMInput, sixPMInput, sevenPMInput, eightPMInput, ninePMInput]
 var storedInput = [stored9PM, stored10AM, stored11AM, stored12PM, stored1PM, stored2PM, stored3PM, stored4PM, stored5PM, stored6PM, stored7PM, stored8PM, stored9PM]
 var inputValue = [input9AM, input10AM, input11AM, input12PM, input1PM, input2PM, input3PM, input4PM, input5PM, input6PM, input7PM, input8PM, input9PM]
 
-function store9AM(){
+
+   function store9AM(){
     var input9AM = document.getElementById("9").value;
     localStorage.setItem("9", input9AM);
     nineAMInput.setAttribute("placeholder",stored9AM);
@@ -141,18 +144,57 @@ function store9AM(){
     localStorage.setItem("21", input9PM);
     ninePMInput.setAttribute("placeholder",stored9PM);
    }
-
-   function changeBGcolor() {
-    for (var i = 0; i<hours.length; i++){
-        if (hours[i]==currentHour){
-            hoursInput[i].setAttribute("class", "form-control col-8 present");
-        }
-    
-        else if (hours[i]>=currentHour){
-            hoursInput[i].setAttribute("class", "form-control col-8 future");
-        }
-    else if (hours[i]<=currentHour){
-        hoursInput[i].setAttribute("class", "form-control col-8 past");
+function changeBGcolor() {
+for (var i = 0; i<hours.length; i++){
+    if (hours[i]==currentHour){
+        hoursInput[i].setAttribute("class", "form-control col-8 present");
     }
+
+    else if (hours[i]>=currentHour){
+        hoursInput[i].setAttribute("class", "form-control col-8 future");
+    }
+else if (hours[i]<=currentHour){
+    hoursInput[i].setAttribute("class", "form-control col-8 past");
+}
+
+    }
+
+if (stored9AM!=null){
+    nineAMInput.setAttribute("placeholder",stored9AM);}
+
+if(stored10AM!=null){
+    tenAMInput.setAttribute("placeholder",stored10AM);}
+
+if(stored11AM!=null){    
+    elevenAMInput.setAttribute("placeholder",stored11AM);}
+if(stored12PM!=null){
+    twelvePMInput.setAttribute("placeholder",stored12PM);}
+if(stored1PM!=null){
+    onePMInput.setAttribute("placeholder",stored1PM);}
+if(stored2PM!=null){
+    twoPMInput.setAttribute("placeholder",stored2PM);}
+if(stored3PM!=null){
+    threePMInput.setAttribute("placeholder",stored3PM);}
+if(stored4PM!=null){
+    fourPMInput.setAttribute("placeholder",stored4PM);}
+if(stored5PM!=null){
+    fivePMInput.setAttribute("placeholder",stored5PM);}
+if(stored6PM!=null){
+    sixPMInput.setAttribute("placeholder",stored6PM);}
+if(stored7PM!=null){
+    sevenPMInput.setAttribute("placeholder",stored7PM);}
+if(stored8PM!=null){
+    eightPMInput.setAttribute("placeholder",stored8PM);}
+if(stored9PM!=null){
+    ninePMInput.setAttribute("placeholder",stored9PM);}
     
-        }
+}
+
+
+
+
+changeBGcolor();
+
+
+
+
