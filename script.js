@@ -64,3 +64,80 @@ var hoursInput = [nineAMInput, tenAMInput, elevenAMInput, twelvePMInput, onePMIn
 var storedInput = [stored9PM, stored10AM, stored11AM, stored12PM, stored1PM, stored2PM, stored3PM, stored4PM, stored5PM, stored6PM, stored7PM, stored8PM, stored9PM]
 var inputValue = [input9AM, input10AM, input11AM, input12PM, input1PM, input2PM, input3PM, input4PM, input5PM, input6PM, input7PM, input8PM, input9PM]
 
+function store9AM(){
+    var input9AM = document.getElementById("9").value;
+    localStorage.setItem("9", input9AM);
+    nineAMInput.setAttribute("placeholder",stored9AM);
+   }
+
+   function store10AM(){
+    var input10AM = document.getElementById("10").value;
+    localStorage.setItem("10", input10AM);
+    tenAMInput.setAttribute("placeholder",stored10AM);
+   }
+
+   function store11AM(){
+    var input11AM = document.getElementById("11").value;
+    localStorage.setItem("11", input11AM);
+    elevenAMInput.setAttribute("placeholder",stored11AM);
+   }
+
+   function store12PM(){
+    var input12PM = document.getElementById("12").value;
+    localStorage.setItem("12", input12PM);
+    twelvePMInput.setAttribute("placeholder",stored12PM);
+   }
+
+   function store1PM(){
+    var input1PM = document.getElementById("13").value;
+    localStorage.setItem("13", input1PM);
+    onePMInput.setAttribute("placeholder",stored1PM);
+   }
+
+   function store2PM(){
+    var input2PM = document.getElementById("14").value;
+    localStorage.setItem("14", input2PM);
+    twoPMInput.setAttribute("placeholder",stored2PM);
+   }
+   
+   function store3PM(){
+    var input3PM = document.getElementById("15").value;
+    localStorage.setItem("15", input3PM);
+    threePMInput.setAttribute("placeholder",stored3PM);
+   }
+
+   function store4PM(){
+    var input4PM = document.getElementById("16").value;
+    localStorage.setItem("16", input4PM);
+    fourPMInput.setAttribute("placeholder",stored4PM);
+   }
+
+   function store5PM(){
+    var input5PM = document.getElementById("17").value;
+    localStorage.setItem("17", input5PM);
+    fivePMInput.setAttribute("placeholder",stored5PM);
+   }
+
+   function store6PM(){
+    var input6PM = document.getElementById("18").value;
+    localStorage.setItem("18", input6PM);
+    sixPMInput.setAttribute("placeholder",stored6PM);
+   }
+
+   function store7PM(){
+    var input7PM = document.getElementById("19").value;
+    localStorage.setItem("19", input7PM);
+    sevenPMInput.setAttribute("placeholder",stored7PM);
+   }
+
+   function store8PM(){
+    var input8PM = document.getElementById("20").value;
+    localStorage.setItem("20", input8PM);
+    eightPMInput.setAttribute("placeholder",stored8PM);
+   }
+
+   function store9PM(){
+    var input9PM = document.getElementById("21").value;
+    localStorage.setItem("21", input9PM);
+    ninePMInput.setAttribute("placeholder",stored9PM);
+   }
