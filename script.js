@@ -141,3 +141,18 @@ function store9AM(){
     localStorage.setItem("21", input9PM);
     ninePMInput.setAttribute("placeholder",stored9PM);
    }
+
+   function changeBGcolor() {
+    for (var i = 0; i<hours.length; i++){
+        if (hours[i]==currentHour){
+            hoursInput[i].setAttribute("class", "form-control col-8 present");
+        }
+    
+        else if (hours[i]>=currentHour){
+            hoursInput[i].setAttribute("class", "form-control col-8 future");
+        }
+    else if (hours[i]<=currentHour){
+        hoursInput[i].setAttribute("class", "form-control col-8 past");
+    }
+    
+        }
