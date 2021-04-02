@@ -59,3 +59,8 @@ var input7PM= document.getElementById("19").value;
 var input8PM= document.getElementById("20").value;
 var input9PM= document.getElementById("21").value;
 
+var hours = [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+var hoursInput = [nineAMInput, tenAMInput, elevenAMInput, twelvePMInput, onePMInput, twoPMInput, threePMInput, fourPMInput, fivePMInput, sixPMInput, sevenPMInput, eightPMInput, ninePMInput]
+var storedInput = [stored9PM, stored10AM, stored11AM, stored12PM, stored1PM, stored2PM, stored3PM, stored4PM, stored5PM, stored6PM, stored7PM, stored8PM, stored9PM]
+var inputValue = [input9AM, input10AM, input11AM, input12PM, input1PM, input2PM, input3PM, input4PM, input5PM, input6PM, input7PM, input8PM, input9PM]
+
