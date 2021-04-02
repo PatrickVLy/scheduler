@@ -21,3 +21,14 @@
 **WHEN** I refresh the page<br>
 **THEN** the saved events persist<br><br>
 <hr>
+
+## Description
+
+This is what I did to finish the project. 
+1. Updated index.html file to add in DOM ids to each element, link to the Bootstrap API and jQuery API. Created individual rows for each hour with a lable, textarea and and save button
+2. in the JS file. I first used moment.js to show current day and time as well as created a varible and set used moment.js to set that variable to the current hour of the day. 
+3. Then I created variables for each hour of the day I wanted to display
+4. Then I created varibles to point to each text area DOM element in the HTML
+5. Then I created variables for each hour to retrieve the localstorage values for each entry
+6. Then I created variable for each hour to retrieve the value inputed into each text box. 
+7. 
