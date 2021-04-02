@@ -50,7 +50,7 @@ else if (hours[i]<=currentHour){
     }
 ```
 
-9. Created a function for each hour, for when the save button is clicked, function will retrieve the value of the text input box and then save the item to localstorage and then used setAttribute method to change the placeholder of the text box to what the use inputed for that hour. 
+9. Created a function for each hour, for when the save button is clicked, function will retrieve the value of the text input box and then save the item to localstorage and then used setAttribute method to change the placeholder of the text box to what the user inputed for that hour. 
 ```
    function store9AM(){
     var input9AM = document.getElementById("9").value;
